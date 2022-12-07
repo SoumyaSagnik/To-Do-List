@@ -69,6 +69,7 @@ button {
     font-size: 1.5rem;
     font-weight: lighter;
     padding: 3% 0 3% 0;
+    overflow: hidden;
 }
 
 .container .lists .item button {
