@@ -12,7 +12,7 @@ search.addEventListener('keyup', (e) => {
 });
 
 addButton.addEventListener('click', () => {
-    const task = document.querySelector('.search input').value;
+    var task = search.value;
     if (task === '')
         return;
     listContainer.innerHTML += `
@@ -23,6 +23,7 @@ addButton.addEventListener('click', () => {
         </button>
     </div>
     `;
+    search.value = '';
     deleteButton = document.querySelectorAll('.lists button');
     deleteButton.forEach(button => {
         button.addEventListener('click', () => {
