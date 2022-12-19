@@ -70,6 +70,7 @@ button {
     font-weight: lighter;
     padding: 3% 0 3% 0;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .container .lists .item button {
@@ -86,5 +87,15 @@ button {
 
 .container .lists .item:hover {
     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .4), .25rem 0 0 green inset;
 }
 
+.landing-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 7rem;
+    z-index: -1;
+}
