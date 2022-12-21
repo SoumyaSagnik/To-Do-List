@@ -62,6 +62,7 @@ button {
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: .25rem;
     margin-top: .25rem;
+    opacity: 0;
 }
 
 .container .lists .item h4 {
@@ -98,4 +99,34 @@ button {
     font-family: 'Hanalei Fill', cursive;
     font-size: 7rem;
     z-index: -1;
+}
+
+@media screen and (max-width:950px) {
+    .landing-message {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .landing-message {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .landing-message {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .landing-message {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .landing-message {
+        font-size: 2rem;
+    }
 }
