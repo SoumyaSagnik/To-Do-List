@@ -28,6 +28,8 @@ addButton.addEventListener('click', () => {
     </div>
     `;
     search.value = '';
+    gsap.to('.item:last-child', 1, { opacity: 1 });
+    gsap.fromTo('.item:last-child', 1, { x: '-10rem' }, { x: 0, ease: 'power3' });
     deleteButton = document.querySelectorAll('.lists button');
     deleteButton.forEach(button => {
         button.addEventListener('click', () => {
