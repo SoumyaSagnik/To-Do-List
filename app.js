@@ -51,3 +51,23 @@ addButton.addEventListener('click', () => {
         })
     })
 });
+
+// -----------------------------------------------------------
+
+const splitText = new SplitType(landingMess);
+gsap.fromTo(landingMess.querySelectorAll('.char'), .5, { opacity: 0 }, { opacity: 1, stagger: { each: .3, from: "start" } });
+gsap.fromTo(landingMess.querySelectorAll('.char'), .5, { y: "10rem" }, { y: 0, stagger: { each: .3, from: "start" }, ease: "elastic" });
+
+setTimeout(function () {
+    landingMess.querySelectorAll(".char").forEach((letter) => {
+        letter.addEventListener("mouseover", () => {
+            gsap.to(letter, 0.25, { y: "0.5rem", ease: "back" });
+        });
+    });
+
+    landingMess.querySelectorAll(".char").forEach((letter) => {
+        letter.addEventListener("mouseout", () => {
+            gsap.to(letter, 0.25, { y: "0" });
+        });
+    });
+}, 2500);
