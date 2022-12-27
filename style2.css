@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
     background: linear-gradient(0deg, rgba(4, 14, 13, 0.4), rgba(255, 255, 255, .4));
     background-attachment: fixed;
 }
@@ -35,6 +35,7 @@ body {
     outline: none;
     font-size: 1.2rem;
     background: none;
+    font-family: inherit;
 }
 
 .search input::placeholder {
@@ -99,6 +100,10 @@ button {
     font-family: 'Hanalei Fill', cursive;
     font-size: 7rem;
     z-index: -1;
+}
+
+.landing-message .char {
+    cursor: default;
 }
 
 @media screen and (max-width:950px) {
